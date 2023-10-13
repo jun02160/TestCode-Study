@@ -6,29 +6,31 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PasswordStrengthMeterTest {
 
+    private PasswordStrengthMeter meter = new PasswordStrengthMeter();
+
+    // 암호 강도 측정 기능을 실행하고 이를 확인하는 코드
+    private void assertStrength(String password, PasswordStrength expStr) {
+        PasswordStrength result = meter.meter(password);
+        assertEquals(expStr, result);
+    }
+
+
     @Test
     void meetsAllCriteria_Then_Strong() {
-
-        // 테스트 코드의 형태
-        PasswordStrengthMeter meter = new PasswordStrengthMeter();
-        PasswordStrength result = meter.meter("ab12!@AB");
-        assertEquals(PasswordStrength.STRONG, result);
-        PasswordStrength result2 = meter.meter("ab12!Add");
-        assertEquals(PasswordStrength.STRONG, result2);
+        assertStrength("ab12!@AB", PasswordStrength.STRONG);
+        assertStrength("ab12!Add", PasswordStrength.STRONG);
     }
 
 
     @Test
     void meetsOtherCriteria_except_for_Length_Then_Normal() {
-        PasswordStrengthMeter meter = new PasswordStrengthMeter();
-        PasswordStrength result = meter.meter("Ab12!c");
-        assertEquals(PasswordStrength.NORMAL, result);
+        assertStrength("Ab12!c", PasswordStrength.NORMAL);
     }
 
     @Test
     void meetsOtherCriteria_except_for_number_Then_Normal() {
-        PasswordStrengthMeter meter = new PasswordStrengthMeter();
         PasswordStrength result = meter.meter("ab!@ABqwer");
         assertEquals(PasswordStrength.NORMAL, result);
+        assertStrength("ab!@ABqwer", PasswordStrength.NORMAL);
     }
 }
