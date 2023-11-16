@@ -1,14 +1,14 @@
 package chap07;
 
-import static org.example.chap07.CardValidity.INVALID;
-import static org.example.chap07.CardValidity.THEFT;
+import static org.example.chap07.credit.CardValidity.INVALID;
+import static org.example.chap07.credit.CardValidity.THEFT;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.example.chap07.AutoDebitRegister;
-import org.example.chap07.AutoDebitReq;
-import org.example.chap07.RegisterResult;
-import org.example.chap07.StubAutoDebitInfoRepository;
-import org.example.chap07.StubCardNumberValidator;
+import org.example.chap07.credit.AutoDebitRegister;
+import org.example.chap07.credit.AutoDebitReq;
+import org.example.chap07.credit.RegisterResult;
+import org.example.chap07.credit.StubAutoDebitInfoRepository;
+import org.example.chap07.credit.StubCardNumberValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

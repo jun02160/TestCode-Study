@@ -1,7 +1,9 @@
-package org.example.chap07;
+package org.example.chap07.credit;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.example.chap07.credit.AutoDebitInfo;
+import org.example.chap07.credit.AutoDebitInfoRepository;
 
 /**
  * ## 가짜 대역

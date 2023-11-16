@@ -1,4 +1,4 @@
-package org.example.chap07;
+package org.example.chap07.credit;
 
 import java.time.LocalDateTime;
 
