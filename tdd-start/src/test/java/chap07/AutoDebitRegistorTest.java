@@ -8,6 +8,7 @@ import org.example.chap07.AutoDebitRegister;
 import org.example.chap07.AutoDebitRepository;
 import org.example.chap07.AutoDebitReq;
 import org.example.chap07.CardNumberValidator;
+import org.example.chap07.JpaAutoDebitInfoRepository;
 import org.example.chap07.RegisterResult;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

@@ -7,6 +7,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.example.chap07.AutoDebitRegister;
 import org.example.chap07.AutoDebitReq;
 import org.example.chap07.RegisterResult;
+import org.example.chap07.StubAutoDebitInfoRepository;
 import org.example.chap07.StubCardNumberValidator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
