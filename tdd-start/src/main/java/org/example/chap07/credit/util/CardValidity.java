@@ -1,4 +1,4 @@
-package org.example.chap07.credit;
+package org.example.chap07.credit.util;
 
 public enum CardValidity {
 
