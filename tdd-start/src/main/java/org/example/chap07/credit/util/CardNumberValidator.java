@@ -1,4 +1,4 @@
-package org.example.chap07.credit;
+package org.example.chap07.credit.util;
 
 import java.io.IOException;
 import java.net.URI;

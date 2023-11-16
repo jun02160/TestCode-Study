@@ -1,7 +1,8 @@
-package org.example.chap07.credit;
+package org.example.chap07.credit.repository;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.example.chap07.credit.dto.AutoDebitInfo;
 
 public class AutoDebitRepository {
 

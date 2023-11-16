@@ -1,6 +1,12 @@
 package org.example.chap07.credit;
 
 import java.time.LocalDateTime;
+import org.example.chap07.credit.dto.AutoDebitInfo;
+import org.example.chap07.credit.dto.AutoDebitReq;
+import org.example.chap07.credit.dto.RegisterResult;
+import org.example.chap07.credit.repository.AutoDebitRepository;
+import org.example.chap07.credit.util.CardNumberValidator;
+import org.example.chap07.credit.util.CardValidity;
 
 public class AutoDebitRegister {
 

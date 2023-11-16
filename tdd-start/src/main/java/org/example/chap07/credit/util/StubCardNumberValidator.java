@@ -1,7 +1,4 @@
-package org.example.chap07.credit;
-
-import org.example.chap07.credit.CardNumberValidator;
-import org.example.chap07.credit.CardValidity;
+package org.example.chap07.credit.util;
 
 /**
  * ## 스텁 대역

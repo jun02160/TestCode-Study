@@ -1,4 +1,6 @@
-package org.example.chap07.credit;
+package org.example.chap07.credit.repository;
+
+import org.example.chap07.credit.dto.AutoDebitInfo;
 
 public interface AutoDebitInfoRepository {
 
